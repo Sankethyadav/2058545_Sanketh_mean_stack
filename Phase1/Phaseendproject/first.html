@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <h2 style= "text-align: center;"> Simply Blogging </h2>
+    <br>
+    <div class="container d-flex justify-content-center" >
+    <ul class="nav">
+        <li class="nav-item" >
+          <a class="nav-link active" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Add Blog</a>
+       
+        </li>
+     
+    </ul>
+    <br/>
+    </div>
+    <div class="container">
+    <form class="form-group">
+        <div class ="row">
+    <div class="col-2"><label class="label-primary">Title</label> </div>
+   <div class="col-2"> <input type="text" id= "name" class="form-control"></div><br/>
+</div>
+<div class="row">
+ <div class ="col-2"><label class="label-primary">Article</label></div>  
+ <div class="col-2"> <input type="text"  id= "nam" class="form-control"></div><br/>
+</div>
+<div class="row">
+ <div class="col-2"> <label class="label-primary">Image</label></div>
+ <div class="col-2">  <input type="text"  id="ucs" class="form-control"></div><br/><br/>
+</div>
+<input type ="button" value ="addme" onclick="adddata()" class="btn btn-success">
+
+</form>
+</div>
+
+
+<div  id="main" style="padding: 2px;" class="container">
+    
+  
+ 
+</div>
+</body>
+<script src ="blog.js">
+
+</script>
+</html>
