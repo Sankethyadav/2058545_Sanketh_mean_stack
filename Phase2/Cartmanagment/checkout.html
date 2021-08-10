@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Shopping Cart Checkout</h1>
+    <div id="main">
+
+    </div>
+    
+</body>
+<script>
+    let price=0;
+
+    let itemparse= localStorage.getItem("itemobj");
+     let itemjason=JSON.parse(itemparse);
+    
+console.log(itemjason);
+var tableContent=""
+    var startTable ="<table border=1><tr><th>name</th><th>Price </th></tr>"
+    for(let i=0;i<itemjason.length;i++){
+        
+    tableContent +="<tr><td>"+itemjason[i].name+"</td><td>"+itemjason[i].price+"</td></tr>"
+    price=price+parseInt (itemjason[i].price);
+}
+  var tot = "Total Budget is :" +price; 
+var endTable="</table>"
+    tableContent = startTable+tableContent+endTable+tot
+    document.getElementById("main").innerHTML=tableContent;
+</script>
+</html>
