@@ -1,0 +1,41 @@
+<p>forms works!</p>
+<div *ngIf="f2" >
+    <h2> Create your account</h2>
+    <form #loginRef>
+        <label>Username</label>
+        <input type ="text" name="user" #reference><br/>
+        <label>Password</label>
+        <input type="password" name="pass" #nameref><br/>
+        <input type="button" value="submit" (click)="changevalue(reference,nameref)" >
+
+    </form>
+</div>
+<div *ngIf="f1">
+    <h1>Welcome to Login page </h1>
+    <form #loginRef>
+        <label>Username</label>
+        <input type ="text" name="users" #ref ><br/>
+        <label>Password</label>
+        <input type="password" name="passes" #Ref><br/>
+        <input type="button" value="Login" (click)="fun(ref,Ref)" >
+        </form>
+</div>
+<div *ngIf=f3>
+    Welcome {{lname}}<br/>
+Contact name <input type="text" name="cname" #tab><br/>
+Phone number <input type="text" name="cnum" #tabs><br/>  
+<input type="button" value="submit" (click)="afg(tab,tabs)"><br/>
+
+
+<table border="1">
+    <tr>
+        <th>Contact Name</th>
+        <th>Phone number</th>    
+    </tr>
+    <tr *ngFor="let emp of employee">
+        <td>{{emp.Name}}</td>
+        <td>{{emp.phonenumber}}</td>
+
+    </tr>
+</table>
+</div>
