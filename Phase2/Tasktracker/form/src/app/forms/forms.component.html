@@ -1,0 +1,44 @@
+<h1 style="text-align: center;">Task Tracker</h1><br/>
+<mat-divider></mat-divider><br/>
+
+<form #loginRef ngSubmit="check()"> 
+    <mat-form-field>
+        <mat-label>Username</mat-label>
+            <input matInput name="user" #refs>
+    </mat-form-field>
+    <br/>
+    <mat-form-field>
+        <mat-label>Id</mat-label>
+            <input matInput name="user" #ref>
+    </mat-form-field><br/>
+    <mat-form-field>
+        <mat-label>Task</mat-label>
+            <input matInput name="user" #val>
+    </mat-form-field>
+    <br/>
+    <mat-form-field>
+        <mat-label>Deadline</mat-label>
+            <input matInput name="user" #vals>
+    </mat-form-field><br/>
+    <mat-divider></mat-divider><br/>
+    <button mat-raised-button color="primary" (click)="fun(ref,refs,val,vals)">Submit</button>
+    
+    
+</form>
+<br/>
+<mat-divider></mat-divider><br/>
+<table border="1">
+    <tr>
+        <th> Name</th>
+        <th>id</th>
+        <th>Task</th>
+        <th>Deadline</th>    
+    </tr>
+    <tr *ngFor="let emp of employee">
+        <td>{{emp.Name}}</td>
+        <td>{{emp.id}}</td>
+        <td>{{emp.task}}</td>
+        <td>{{emp.deadline}}</td>
+
+    </tr>
+</table>

@@ -1,6 +1,6 @@
 <p>forms works!</p>
 <div *ngIf="f2" >
-    <h2> Create your account</h2>
+    <h2 style="text-align: center;"> Create your account</h2>
     <form #loginRef>
         <label>Username</label>
         <input type ="text" name="user" #reference><br/>
@@ -25,7 +25,6 @@
 Contact name <input type="text" name="cname" #tab><br/>
 Phone number <input type="text" name="cnum" #tabs><br/>  
 <input type="button" value="submit" (click)="afg(tab,tabs)"><br/>
-
 
 <table border="1">
     <tr>
