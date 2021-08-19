@@ -1,0 +1,14 @@
+<h2 style="text-align: center;">Welcome to Online quizz</h2>
+
+<form>
+    
+    <div *ngFor="let emp of str">
+     
+    <p>Question: {{emp.question}}</p>
+ <input type="radio" name={{emp.question}} value={{emp.ans1}} (click)="onclick()">{{emp.ans1}}<br/>
+<input type="radio" name={{emp.question}} value={{emp.ans2}} (click)="onclicks()">{{emp.ans2}}<br/>
+<input type="radio" name={{emp.question}} value={{emp.ans3}} (click)="onclicks()">{{emp.ans3}}<br/>
+ <input type="radio" name={{emp.question}} value={{emp.ans4}} (click)="onclicks()">{{emp.ans4}}<br/>
+</div>
+</form>
+<input type="submit" value="Click Here for results" (click)="submit()">
