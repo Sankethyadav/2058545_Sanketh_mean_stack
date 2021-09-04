@@ -1,0 +1,9 @@
+Commands to insert the Jason data in Mongo
+Inserting data into 
+
+> db.sample.insert({ "_id" : 1,"source" : "9988776655", "destination":"9123456789","sourceLocation":"Bangalore",
+"destinationLocation":"Mysore", "callDuration":"00:5:00", "roaming":"No", "callCharge":"5"});
+
+To display th file contents 
+
+> db sample.find();
