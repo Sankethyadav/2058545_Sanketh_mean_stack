@@ -9,7 +9,6 @@ let indexPage = `
                     </head>
                     <body>
                     <h2>Welcome to Task Tracker </h2>
-                    
                     <a href="Login">Task Tracking Details </a>
                     </body>
             </html>
