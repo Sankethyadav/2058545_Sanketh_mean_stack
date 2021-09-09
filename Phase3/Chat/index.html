@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+     
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+        var socket = io();
+        socket.emit('obj',"Hello Server I am Web Socket IO Client");
+        socket.on("obj1",(msg)=> {
+            alert(msg);
+            
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div >
+          
+            <br />
+            <form action="/addmessage" method="POST">
+                <br />
+                <input type="text" class="form-control" placeholder="Name" name="name">
+                <br />
+                <textarea cols="30" rows="10" class="form-control" placeholder="Message" name="text"></textarea>
+                <br />
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-secondary">Send</button> |
+
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</body>
+
+</html>

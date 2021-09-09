@@ -11,7 +11,16 @@ console.log("Client connected")
 socket.on("obj",(msg)=>{
     console.log(msg)
 })
-socket.emit("obj1","Hello Client ");
+
 
 })
+
+io.on("connection",(socket)=>{
+    //console.log("Client connected")
+    socket.on("obj1",(msg)=>{
+        console.log(msg)
+    })
+    
+    
+    })
 http.listen(9090,()=>console.log("Server running on port  9090"));

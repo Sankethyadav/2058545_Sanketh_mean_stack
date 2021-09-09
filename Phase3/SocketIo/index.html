@@ -20,20 +20,8 @@ var fun=()=>{
            let mm=document.getElementById("dd").value;
          console.log(mm);
         
-        if(count==0){
-            document.getElementById('main').innerHTML= "WELCOME";
-            count++
-        }
-        else if(count==1){
-            document.getElementById('main').innerHTML= "Please wait for assistance";
-            count++
-        }
-        else{
-            document.getElementById('main').innerHTML= "It may take some time";
-        }
-        
-    
-         socket.emit("obj",mm);
+       
+        socket.emit("obj",mm);
     
         }
 </script>
@@ -42,6 +30,7 @@ var fun=()=>{
 <body>
     <h1>Welcome</h1>
     <input type="text"  id="dd">
+    <input type="text"  id="dc">
     <input type="button" value="Click Here" onclick="fun()">
 <div id="main">
 
